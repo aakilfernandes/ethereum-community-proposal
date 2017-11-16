@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message Proposal {
+  uint32 version = 1;
+  uint32 type = 2;
+  uint32 expiration = 3;
+  string description = 4;
+  repeated string choices = 5 [packed = true];
+}
